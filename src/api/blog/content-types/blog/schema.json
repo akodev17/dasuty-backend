@@ -1,38 +1,39 @@
 {
   "kind": "collectionType",
-  "collectionName": "portfolios",
+  "collectionName": "blogs",
   "info": {
-    "singularName": "portfolio",
-    "pluralName": "portfolios",
-    "displayName": "portfolio",
-    "description": ""
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "category": {
+      "type": "text"
+    },
     "image": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     },
     "title": {
       "type": "text"
     },
-    "category": {
+    "author": {
       "type": "text"
+    },
+    "date": {
+      "type": "date"
     },
     "desc": {
-      "type": "text"
-    },
-    "type": {
       "type": "text"
     }
   }
